@@ -5,8 +5,13 @@
 //  Initialize the 'newString' variable as any kind of non-empty string
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
+////////////////////////////////////////////////////////////////////////
+//
+//  EXERCISE 1 - INITIALIZATION
+//
+////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let newString
+let newString = "Hello, I am learning strings in JavaScript!";
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -16,13 +21,10 @@ let newString
 //
 //  EXERCISE 2 - TYPE OF
 //
-//  Get the data type of the 'getMyDataType' variable and save it into
-//  the variable 'gotDataType'
-let getMyDataType = "This is a string"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let gotDataType
+let getMyDataType = "This is a string";
+let gotDataType = typeof getMyDataType;
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -32,13 +34,10 @@ let gotDataType
 //
 //  EXERCISE 3 - STRING LENGTH
 //
-//  Determine the length of the following variable 'getMyLenght', and save
-//  into the variable 'myLength'
-let getMyLenght = "Get the length of this string"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let myLength
+let getMyLenght = "Get the length of this string";
+let myLength = getMyLenght.length;
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -48,16 +47,12 @@ let myLength
 //
 //  EXERCISE 4 - STRING CONCATENATION
 //
-//  Concatenate variables 'concat1', 'concat2', and 'concat3' together
-//  and save the result into 'concatStrings'
-//  NOTE: You can concatenate with + or with an in-built function
-let concat1 = "No Luke, "
-let concat2 = "I am your "
-let concat3 = "father!"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let concatStrings
+let concat1 = "No Luke, ";
+let concat2 = "I am your ";
+let concat3 = "father!";
+let concatStrings = concat1.concat(concat2, concat3);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -67,15 +62,11 @@ let concatStrings
 //
 //  EXERCISE 5 - STRING CONTAINS
 //
-//  Check if variable 'mainString' contains the 'subString' string
-//  and save the result into 'stringContains'
-//  NOTE: stringContains should be a boolean value of True or False
-let mainString = "Friends are made throughout the day"
-let subString = "out"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringContains
+let mainString = "Friends are made throughout the day";
+let subString = "out";
+let stringContains = mainString.includes(subString);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -85,15 +76,13 @@ let stringContains
 //
 //  EXERCISE 6 - STRING CONTAINS IGNORE CASE
 //
-//  Check if variable 'mainStringIgnoreCase' contains the 'subStringIgnoreCase'
-//  string ignoring case, and save the result into 'stringContainsIgnoreCase'
-//  NOTE: stringContainsIgnoreCase should be a boolean value of True or False
-let mainStringIgnoreCase = "Friends are made throughout the day"
-let subStringIgnoreCase = "friends"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringContainsIgnoreCase
+let mainStringIgnoreCase = "Friends are made throughout the day";
+let subStringIgnoreCase = "friends";
+let stringContainsIgnoreCase = mainStringIgnoreCase
+  .toLowerCase()
+  .includes(subStringIgnoreCase.toLowerCase());
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -103,13 +92,10 @@ let stringContainsIgnoreCase
 //
 //  EXERCISE 7 - STRING FIRST CHARACTER
 //
-//  Get the first character of 'getFirstCharacter' and save the result
-//  into 'firstCharacter'
-let getFirstCharacter = "You need my first character"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let firstCharacter
+let getFirstCharacter = "You need my first character";
+let firstCharacter = getFirstCharacter.charAt(0);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -119,13 +105,10 @@ let firstCharacter
 //
 //  EXERCISE 8 - STRING FIRST FOUR CHARACTERS
 //
-//  Get the first four character of 'getFirstFourCharacters' and save the result
-//  into 'firstFourCharacters'
-let getFirstFourCharacters = "You need my first four characters"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let firstFourCharacters
+let getFirstFourCharacters = "You need my first four characters";
+let firstFourCharacters = getFirstFourCharacters.substring(0, 4);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -135,13 +118,10 @@ let firstFourCharacters
 //
 //  EXERCISE 9 - STRING LAST CHARACTER
 //
-//  Get the last character of 'getLastCharacter' and save the result
-//  into 'lastCharacter'
-let getLastCharacter = "You need my last character"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let lastCharacter
+let getLastCharacter = "You need my last character";
+let lastCharacter = getLastCharacter.charAt(getLastCharacter.length - 1);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -151,13 +131,12 @@ let lastCharacter
 //
 //  EXERCISE 10 - STRING LAST SIX CHARACTERS
 //
-//  Get the last six character of 'getLastSixCharacters' and save the result
-//  into 'lastSixCharacters'
-let getLastSixCharacters = "You need my last six characters"
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let lastSixCharacters
+let getLastSixCharacters = "You need my last six characters";
+let lastSixCharacters = getLastSixCharacters.substring(
+  getLastSixCharacters.length - 6
+);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -167,15 +146,11 @@ let lastSixCharacters
 //
 //  EXERCISE 11 - STRING EQUALS
 //
-//  Determine if strings 'checkEquality1' and 'checkEquality2' are equal
-//  and save the result into 'stringsAreEqual'
-let checkEquality1 = "Are we equal?"
-let checkEquality2 = "Are we equal?"
-//  NOTE: 'stringsAreEqual' should be a boolean value of True or False
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringsAreEqual
+let checkEquality1 = "Are we equal?";
+let checkEquality2 = "Are we equal?";
+let stringsAreEqual = checkEquality1 === checkEquality2;
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -185,15 +160,13 @@ let stringsAreEqual
 //
 //  EXERCISE 12 - STRING EQUALS IGNORE CASE
 //
-//  Determine if strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2'
-//  are equal, ignoring case, and save the result into 'stringsAreEqualIgnoreCase'
-let checkEqualityIgnoreCase1 = "Are we equal?"
-let checkEqualityIgnoreCase2 = "are we EQUAL?"
-//  NOTE: 'stringsAreEqualIgnoreCase' should be a boolean value of True or False
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringsAreEqualIgnoreCase
+let checkEqualityIgnoreCase1 = "Are we equal?";
+let checkEqualityIgnoreCase2 = "are we EQUAL?";
+let stringsAreEqualIgnoreCase =
+  checkEqualityIgnoreCase1.toLowerCase() ===
+  checkEqualityIgnoreCase2.toLowerCase();
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -203,13 +176,10 @@ let stringsAreEqualIgnoreCase
 //
 //  EXERCISE 13 - STRING REPLACE
 //
-//  Replace all occurences of "John" with "Michael" in 'replaceMe' and save
-//  the result into 'replacedString'
-let replaceMe = "John just moved to Montreal. John will be meeting his roomate soon."
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let replacedString
+let replaceMe = "John just moved to Montreal. John will be meeting his roomate soon.";
+let replacedString = replaceMe.replace(/John/g, "Michael");
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -219,14 +189,10 @@ let replacedString
 //
 //  EXERCISE 14 - STRING REMOVE
 //
-//  Remove 'going to' from the string 'removeMe' so that is makes sense
-//  and save the result into removedString
-//  Note: You can use the replace function to do so
-let removeMe = "We will going to be leaving at noon sharp."
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let removedString
+let removeMe = "We will going to be leaving at noon sharp.";
+let removedString = removeMe.replace("going to ", "");
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -236,18 +202,15 @@ let removedString
 //
 //  EXERCISE 15 - MULTIPLE MANIPULATIONS 1
 //
-//  Turn 'testString1':
-let testString1 = "The quick brown fox jumps over the lazy dog"
-//  into 'targetString1':
-let targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
-//  NOTE: Only add functions to testString1 and do not create any new variables
-//  The tests will check if testString1 is equal to targetString1
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
+let testString1 = "The quick brown fox jumps over the lazy dog";
+testString1 = testString1.toUpperCase().replace(/ /g, "-");
 
+let targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG";
 
 ////////////////////////////////////////////////////////////////////////
+
 
 
 
@@ -255,17 +218,14 @@ let targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
 //
 //  EXERCISE 16 - MULTIPLE MANIPULATIONS 2
 //
-//  Turn 'testString2':
-let testString2 = "I am the first sentence. You are the second sentence"
-//  into 'targetString2':
-let targetString2 = "i am the second best, you are the first best!"
-//  Only add functions to testString2 and do not create any new variables
-//  The tests will check if testString2 is equal to targetString2
-//  Hint: There is more than one way to solve this - be creative!
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
+let testString2 = "Once upon a time in a land far far away";
+testString2 = testString2.replace("Once upon a time", "Long ago")
+                         .toLowerCase()
+                         .replace(/ /g, "_");
 
+let targetString2 = "long_ago_in_a_land_far_far_away";
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -275,28 +235,12 @@ let targetString2 = "i am the second best, you are the first best!"
 //
 //  EXERCISE 17 - STRING ESCAPED CHARACTER
 //
-//  Since strings start and end in quotes, you can't just add a quote
-//  midstring as this would signify the end of the string. However, in
-//  strings you can add the backwards slash e.g. \" before a character to invoke
-//  an alternative interpretation of the character. This is called
-//  ESCAPING and is used often by programmers
-let escapedString
-//   Uncomment the expression below to see the outcome of the printed variable
-//
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-// escapedString = "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\""
+let escapedString =
+  "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\"";
 
 ////////////////////////////////////////////////////////////////////////
-
-
-
-/////////////////////// END OF STRINGS EXERCISES ///////////////////////
-
-
-
-////////////////////////////////////////////////////////////////////////
-//
 //                               ANSWERS
 //
 //  DO NOT LOOK AT THIS SECTION UNTIL YOU HAVE FINISHED THE EXERCISES
